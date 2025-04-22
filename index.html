@@ -23,6 +23,82 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Section Styles */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background-color: #FFD700;
+    margin-bottom: 2rem;
+}
+
+.about-section, .skills-section {
+    margin-bottom: 4rem;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+}
+
+/* Skills Section Styles */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.skill-percentage {
+    color: #FFD700;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #FFD700;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+  </style>
 </head>
 
 <body>
@@ -219,6 +295,113 @@
           </p>
 
         </section>
+
+        <!-- New Skills Section -->
+        <section class="skills-section">
+          <h2 class="h2 article-title">My Skills</h2>
+          
+          <div class="skills-container">
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">HTML</span>
+                      <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 95%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">CSS</span>
+                      <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">JavaScript</span>
+                      <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">React</span>
+                      <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">NodeJs</span>
+                      <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">Express</span>
+                      <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">MySQL</span>
+                      <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">Photoshop</span>
+                      <span class="skill-percentage">50%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 50%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">Figma</span>
+                      <span class="skill-percentage">60%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 60%"></div>
+                  </div>
+              </div>
+              
+              <div class="skill-item">
+                  <div class="skill-info">
+                      <span class="skill-name">C++</span>
+                      <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                      <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
 
         <!--
